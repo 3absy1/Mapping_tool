@@ -9,12 +9,12 @@
         <div class="align-items-start border-bottom">
             <x-referencemodule::first-head label="Merge" icon="file" />
         </div>
-        <x-referencemodule::import-form action="{{ route('merge.import') }}" method="POST">
+        <x-referencemodule::import-Mergeform action="{{ route('merge.import') }}" method="POST">
             <br>
             <label class="form-label  fs--1 ps-0 text-capitalize  mb-2" for="mainAdminLogo">
                 Here you will upload the file to
                 merge any duplicated data in one column</label>
-        </x-referencemodule::import-form>
+        </x-referencemodule::import-Mergeform>
     </div>
     <script>
         var win = navigator.platform.indexOf('Win') > -1;

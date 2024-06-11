@@ -21,7 +21,8 @@ use Modules\ReferenceModule\App\Http\Controllers\RelatedController;
 //     Route::resource('referencemodule', ReferenceModuleController::class)->names('referencemodule');
 // });
 
-
+Route::middleware('auth')->group(function () {
+    
 Route::prefix('checkPage')->group(function () {
     Route::get('/',[CheckController::class,'index'])->name('check.index');
     Route::get('/search',[CheckController::class,'search'])->name('check.search');
@@ -69,4 +70,6 @@ Route::prefix('referencePage')->group(function () {
         Route::get('/export', [MergeController::class, 'export'])->name('merge.export');
 
     });
+
+});
 

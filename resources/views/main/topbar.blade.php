@@ -17,76 +17,30 @@
         <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search"><button class="btn btn-link btn-close-falcon p-0" aria-label="Close"></button></div>
         <div class="dropdown-menu border font-base start-0 py-0 overflow-hidden w-100">
         <div class="scrollbar list pb-3" style="max-height: 30rem;">
-            <h6 class="dropdown-header text-1000 fs--2 py-2">24 <span class="text-500">results</span></h6>
-            <hr class="text-200 my-0" />
-            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Recently Searched </h6><a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"><span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> Store Macbook</div>
-            </div>
-            </a>
-            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"> <span class="fa-solid fa-clock-rotate-left" data-fa-transform="shrink-2"></span> MacBook Air - 13″</div>
-            </div>
-            </a>
+            <h6 class="dropdown-header text-1000 fs--2 py-2">4 <span class="text-500">results</span></h6>
 
             <hr class="text-200 my-0" />
-            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Quick Links</h6><a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Quick Links</h6><a class="dropdown-item" href="{{ route('check.index') }}">
             <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"><span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> Support MacBook House</div>
+                <div class="fw-normal text-1000 title"><span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> Check</div>
             </div>
             </a>
-            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
+            <a class="dropdown-item" href="{{ route('reference.index') }}">
             <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"> <span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> Store MacBook″</div>
+                <div class="fw-normal text-1000 title"> <span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> References </div>
             </div>
             </a>
-            <hr class="text-200 my-0" />
-            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Files</h6><a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"><span class="fa-solid fa-file-zipper text-900" data-fa-transform="shrink-2"></span> Library MacBook folder.rar</div>
-            </div>
-            </a>
-            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"> <span class="fa-solid fa-file-lines text-900" data-fa-transform="shrink-2"></span> Feature MacBook extensions.txt</div>
-            </div>
-            </a>
-            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"> <span class="fa-solid fa-image text-900" data-fa-transform="shrink-2"></span> MacBook Pro_13.jpg</div>
-            </div>
-            </a>
-            <hr class="text-200 my-0" />
-            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Members</h6><a class="dropdown-item py-2 d-flex align-items-center" href="pages/pages/members.html">
-            <div class="avatar avatar-l status-online  me-2 text-900">
-                <img class="rounded-circle " src="{{asset('assets')}}/img/team/avatar.png" alt="" />
-            </div>
-            <div class="flex-1">
-                <h6 class="mb-0 text-1000 title">Carry Anna</h6>
-                <p class="fs--2 mb-0 d-flex text-700">anna@technext.it</p>
-            </div>
-            </a>
-            <a class="dropdown-item py-2 d-flex align-items-center" href="pages/pages/members.html">
-            <div class="avatar avatar-l  me-2 text-900">
-                <img class="rounded-circle " src="{{asset('assets')}}/img/team/avatar.png" alt="" />
-            </div>
-            <div class="flex-1">
-                <h6 class="mb-0 text-1000 title">John Smith</h6>
-                <p class="fs--2 mb-0 d-flex text-700">smith@technext.it</p>
-            </div>
-            </a>
-            <hr class="text-200 my-0" />
-            <h6 class="dropdown-header text-1000 fs--1 border-bottom py-2 lh-sm">Related Searches</h6><a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"><span class="fa-brands fa-firefox-browser text-900" data-fa-transform="shrink-2"></span> Search in the Web MacBook</div>
-            </div>
-            </a>
-            <a class="dropdown-item" href="apps/e-commerce/landing/product-details.html">
-            <div class="d-flex align-items-center">
-                <div class="fw-normal text-1000 title"> <span class="fa-brands fa-chrome text-900" data-fa-transform="shrink-2"></span> Store MacBook″</div>
-            </div>
-            </a>
+            <a class="dropdown-item" href="{{ route('related.index') }}">
+                <div class="d-flex align-items-center">
+                    <div class="fw-normal text-1000 title"> <span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> Related </div>
+                </div>
+                </a>
+                <a class="dropdown-item" href="{{ route('merge.index') }}">
+                    <div class="d-flex align-items-center">
+                        <div class="fw-normal text-1000 title"> <span class="fa-solid fa-link text-900" data-fa-transform="shrink-2"></span> Merge </div>
+                    </div>
+                    </a>
+
         </div>
         <div class="text-center">
             <p class="fallback fw-bold fs-1 d-none">No Result Found.</p>
@@ -288,11 +242,11 @@
                 <div class="avatar avatar-xl ">
                     <img class="rounded-circle " src="{{asset('assets')}}/img/team/avatar.png" alt="" />
                 </div>
-                <h6 class="mt-2 text-black">Jerry Seinfield</h6>
+                <h6 class="mt-2 text-black">{{ Auth::user()->name }}</h6>
                 </div>
-                <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div>
+                {{-- <div class="mb-3 mx-3"><input class="form-control form-control-sm" id="statusUpdateInput" type="text" placeholder="Update your status" /></div> --}}
             </div>
-            <div class="overflow-auto scrollbar" style="height: 10rem;">
+            {{-- <div class="overflow-auto scrollbar" style="height: 10rem;">
                 <ul class="nav d-flex flex-column mb-2 pb-1">
                 <li class="nav-item"><a class="nav-link px-3" href="profile.html"> <span class="me-2 text-900" data-feather="user"></span>Profile</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="#!"><span class="me-2 text-900" data-feather="pie-chart"></span>Dashboard</a></li>
@@ -301,13 +255,21 @@
                 <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="help-circle"></span>Help Center</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="globe"></span>Language</a></li>
                 </ul>
-            </div>
+            </div> --}}
             <div class="card-footer p-0 border-top">
-                <ul class="nav d-flex flex-column my-3">
+                {{-- <ul class="nav d-flex flex-column my-3">
                 <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-900" data-feather="user-plus"></span>Add another account</a></li>
-                </ul>
+                </ul> --}}
                 <hr />
-                <div class="px-3"> <a class="btn btn-phoenix-secondary d-flex flex-center w-100" href="#!"> <span class="me-2" data-feather="log-out"> </span>Sign out</a></div>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <div class="px-3">
+
+                    <button type="submit" class="btn btn-phoenix-secondary d-flex flex-center w-100">
+                        {{ __('Log Out') }}
+                    </button>
+                    </div>
+                </form>
                 <div class="my-2 text-center fw-bold fs--2 text-600"><a class="text-600 me-1" href="#!">Privacy policy</a>&bull;<a class="text-600 mx-1" href="#!">Terms</a>&bull;<a class="text-600 ms-1" href="#!">Cookies</a></div>
             </div>
             </div>

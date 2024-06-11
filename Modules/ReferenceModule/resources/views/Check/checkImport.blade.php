@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="text-center col-1">
-                        <button type="submit" class="btn btn-primary w-100 mt-5">Import</button>
+                        <x-referencemodule::form-button label="Import" />
                     </div>
                 </div>
 

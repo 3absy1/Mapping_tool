@@ -10,13 +10,27 @@
             the file you uploaded.</label>
         <form method="POST" action="{{ route('related-upload') }}" enctype="multipart/form-data">
             @csrf
-            <div class="tab-pane fade active show" id="tab-tab1" role="tabpanel" aria-labelledby="Main-tab">
+            <div class="tab-pane fade active show my-3" id="tab-tab1" role="tabpanel" aria-labelledby="Main-tab">
                 <div class="row g-3 mb-5">
-                    <x-referencemodule::selector label="Name" selectName="name" :options="$headers" />
-                    <x-referencemodule::selector label="Code" selectName="code" :options="$headers" />
-                    <x-referencemodule::selector label="Reference Name" selectName="reference_code" :options="$headers" />
+                    <div class="col-3">
+                        <x-referencemodule::selector label="Name" selectName="name" :options="$headers" />
+                    </div>
+                    <div class="col-3">
+
+                        <x-referencemodule::selector label="Code" selectName="code" :options="$headers" />
+                    </div>
+                    <div class="col-3">
+
+                        <x-referencemodule::selector label="Reference Name" selectName="reference_code" :options="$headers" />
+                    </div>
+
                 </div>
-                <div class="text-sm-end text-center"><button type="submit" class="btn btn-primary px-7">Save</button></div>
+                <div class="text-center col-1">
+
+                    <x-referencemodule::form-button label="Import" />
+
+                </div>
+
             </div>
         </form>
     </section>
